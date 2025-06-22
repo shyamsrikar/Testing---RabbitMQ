@@ -132,6 +132,10 @@ Launch RabbitMQ using Docker Compose:
 ```
 sudo docker-compose up -d
 ```
+
+![Screenshot from 2025-06-22 09-54-03](https://github.com/user-attachments/assets/3af43321-7a85-4660-a641-c9b1d430d37d)
+
+
 Verify that the container is running:
 ```
 sudo docker ps
@@ -150,4 +154,10 @@ http://<EC2_PUBLIC_IP>:15672
 - Username: admin
 - Password: StrongPassword123
 
-✅ You should now see the RabbitMQ Management Dashboard.
+![Screenshot from 2025-06-22 09-55-35](https://github.com/user-attachments/assets/3dbc5204-31d7-45e9-9484-6fb9ee81b77b)
+
+
+✅ You should now see the RabbitMQ Management Dashboard like this.
+
+![Screenshot from 2025-06-22 09-55-44](https://github.com/user-attachments/assets/95058abd-0dbe-4420-8c0d-a4ef7e001010)
+
