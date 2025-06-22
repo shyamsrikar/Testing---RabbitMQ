@@ -1,9 +1,11 @@
 # Testing - RabbitMQ
+
 ## What is RabbitMQ?
 
 RabbitMQ is an open-source message broker — a software that helps applications, services, and systems communicate with each other by sending and receiving messages through a centralized system.
 
 ### 🧠 In Simple Terms:
+
 RabbitMQ acts like a "post office" between your applications:
 
 - One application (producer) sends a message to RabbitMQ.
@@ -11,6 +13,9 @@ RabbitMQ acts like a "post office" between your applications:
 - Another application (consumer) receives it from RabbitMQ.
   
 ![Screenshot from 2025-06-22 10-27-02](https://github.com/user-attachments/assets/6b63eee9-3131-427b-812e-90e4a0f302db)
+
+
+
 
 ## Before installing RabbitMQ, you need a server to run it. Here’s how to set up an Ubuntu server on AWS:
 
@@ -33,7 +38,8 @@ RabbitMQ acts like a "post office" between your applications:
   ![Screenshot from 2025-06-22 09-47-50](https://github.com/user-attachments/assets/c42e5577-3a9a-40b0-83c8-4a2ff7ad5204)
   
 - 6) Network Settings:
-  SSH (TCP 22): Source → My IP
+  7) 
+  SSH (TCP 22)
   Custom TCP Rule (5672): Source → 0.0.0.0/0 (for RabbitMQ AMQP access)
   Custom TCP Rule (15672): Source → 0.0.0.0/0 (for RabbitMQ Web UI)
 
@@ -50,6 +56,7 @@ RabbitMQ acts like a "post office" between your applications:
 
  ![Screenshot from 2025-06-22 09-50-22](https://github.com/user-attachments/assets/4d87f99d-d6ca-42c4-9969-bfb2e4c3d71d)
 
+
  ## 📦 PART-II
 
  # 🛠️ Installation Steps for RabbitMQ on Ubuntu Server After Connecting to the Instance Using Docker and Docker-Compose:
@@ -64,11 +71,14 @@ RabbitMQ acts like a "post office" between your applications:
   sudo apt update
   sudo apt install docker.io -y
 ```
+
 Start and enable Docker to run on boot:
+
 ```
  sudo systemctl start docker
  sudo systemctl enable docker
 ```
+
 ### ✅ Step 2: check Wheather the Docker is Installed or not
 
 ```
@@ -85,8 +95,8 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
-
 ```
+
 ✅ You should see the Docker Compose version printed — confirmation it's installed.
 
 ## 📦 Part-III
@@ -106,6 +116,7 @@ Now create a docker-compose.yml file:
 ```
 nano docker-compose.yml
 ```
+
 Paste the following configuration into the file:
 
 ```
@@ -123,6 +134,7 @@ services:
       RABBITMQ_DEFAULT_PASS: StrongPassword123
     restart: always
 ```
+
 Save and exit the file: Ctrl + O, Enter, then Ctrl + X.
 
 ### ✅ Step 5: Start RabbitMQ
@@ -137,9 +149,11 @@ sudo docker-compose up -d
 
 
 Verify that the container is running:
+
 ```
 sudo docker ps
 ```
+
 ✅ You should see a container named rabbitmq running on ports 5672 and 15672.
 
 ## 📦 Part-IV: Access RabbitMQ via Public IP
@@ -147,10 +161,13 @@ sudo docker ps
 ### ✅ Step 6: Open RabbitMQ Management UI
 
 Open a web browser and navigate to:
+
 ```
 http://<EC2_PUBLIC_IP>:15672
 ```
+
 #### Login with:
+
 - Username: admin
 - Password: StrongPassword123
 
