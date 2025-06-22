@@ -161,3 +161,39 @@ http://<EC2_PUBLIC_IP>:15672
 
 ![Screenshot from 2025-06-22 09-55-44](https://github.com/user-attachments/assets/95058abd-0dbe-4420-8c0d-a4ef7e001010)
 
+  
+# Monitors Implemented for Testing RabbitMQ service:
+
+# Monitors Implemented:
+
+![Screenshot from 2025-06-22 10-12-38](https://github.com/user-attachments/assets/af8ec81d-9de5-4dc4-a698-478d766ec29e)
+
+## Monitors to be Tested:
+
+### Memory Usage Check
+
+- Continuously checks the memory consumption of the RabbitMQ service to detect memory leaks or excessive resource usage that could impact system performance.
+
+![Screenshot from 2025-06-22 10-13-48](https://github.com/user-attachments/assets/66cbfb7b-6145-488f-832c-dd8c802b3131)
+
+
+### Consumer Lag Check
+
+- Monitors the lag between message production and consumption, helping identify slow consumers or unbalanced workloads across consumers.
+
+![Screenshot from 2025-06-22 10-13-28](https://github.com/user-attachments/assets/3ba5631f-a1aa-457f-97cf-e8d572377b69)
+
+### Queue Depth Check
+
+- Tracks the depth of message queues to ensure that messages are being processed in a timely manner and to flag potential congestion or backlogs.
+
+![Screenshot from 2025-06-22 10-13-17](https://github.com/user-attachments/assets/5b3cee7e-f43d-4a6e-8dd7-078730eed44d)
+
+### Connectivity Check
+
+- Verifies network-level connectivity to the RabbitMQ server, ensuring that the service is reachable and available for communication from the monitoring host.
+
+![Screenshot from 2025-06-22 10-13-08](https://github.com/user-attachments/assets/affedfbc-1c98-44c0-a351-7647a64f4e1e)
+
+# Conclusion:
+- All the monitors are running successfully after passing the environment variables for RabbitMQ service.
