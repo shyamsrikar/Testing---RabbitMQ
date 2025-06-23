@@ -61,7 +61,7 @@ RabbitMQ acts like a "post office" between your applications:
 
  # 🛠️ Installation Steps for RabbitMQ on Ubuntu Server After Connecting to the Instance Using Docker and Docker-Compose:
 
- ## To install HashiCorp RabbitMQ on Ubuntu, follow these steps:
+ ## To install RabbitMQ on Ubuntu, follow these steps:
 
  ### ✅ Step 1: Update System and Install Docker
 
