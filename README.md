@@ -38,10 +38,9 @@ RabbitMQ acts like a "post office" between your applications:
   ![Screenshot from 2025-06-22 09-47-50](https://github.com/user-attachments/assets/c42e5577-3a9a-40b0-83c8-4a2ff7ad5204)
   
 - 6) Network Settings:
-  7) 
-  SSH (TCP 22)
-  Custom TCP Rule (5672): Source → 0.0.0.0/0 (for RabbitMQ AMQP access)
-  Custom TCP Rule (15672): Source → 0.0.0.0/0 (for RabbitMQ Web UI)
+  7) SSH (TCP 22)
+    Custom TCP Rule (5672): Source → 0.0.0.0/0 (for RabbitMQ AMQP access)
+    Custom TCP Rule (15672): Source → 0.0.0.0/0 (for RabbitMQ Web UI)
 
   ![Screenshot from 2025-06-22 09-48-46](https://github.com/user-attachments/assets/25369730-0545-43ea-a469-7c06fe1f5803)
   
