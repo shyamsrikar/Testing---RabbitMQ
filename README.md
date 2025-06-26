@@ -213,4 +213,5 @@ http://<EC2_PUBLIC_IP>:15672
 
 # Conclusion:
 - All the monitors are running successfully after passing the environment variables for RabbitMQ service.
- 
+
+ 1
